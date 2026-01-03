@@ -1,0 +1,10 @@
+# Output files
+output/
+input/*
+!input/.gitkeep
+
+# OS
+.DS_Store
+
+# Temp files
+*.tmp
