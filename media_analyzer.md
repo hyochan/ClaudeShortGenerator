@@ -5,7 +5,7 @@ media_index.json을 분석하여 **최적의 편집 계획(edit_plan.json)**을 
 ## 역할
 
 > Claude가 **편집 감독(Director)**으로서 각 미디어의 특성을 파악하고,
-> 60초 이내의 매력적인 쇼츠 영상을 만들기 위한 편집 결정을 내린다.
+> 60~90초의 매력적인 쇼츠 영상을 만들기 위한 편집 결정을 내린다.
 
 ## 판단 기준
 
@@ -50,7 +50,7 @@ media_index.json을 분석하여 **최적의 편집 계획(edit_plan.json)**을 
 
 ```json
 {
-  "target_seconds": 54,
+  "target_seconds": 75,
   "timeline": [
     {
       "type": "video",
@@ -121,7 +121,7 @@ media_index.json을 분석하여 **최적의 편집 계획(edit_plan.json)**을 
 
 ## 제약 조건
 
-1. **총 길이 ≤ 60초**: timeline의 out_seconds 합이 60초를 넘지 않아야 함
+1. **총 길이 60~90초**: timeline의 out_seconds 합이 60~90초 사이여야 함
 2. **썸네일 2~3개**: 영상의 매력적인 순간 선택
 3. **자막/텍스트 금지**: 순수 영상만
 4. **reason 필수**: 모든 결정에는 근거가 있어야 함

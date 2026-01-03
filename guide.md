@@ -24,7 +24,7 @@ cp my_video.mp4 my_photo.jpg my_music.mp3 input/
 
 ```
 output/
-  final_short.mp4      # 최종 쇼츠 (9:16, ≤60초)
+  final_short.mp4      # 최종 쇼츠 (9:16, 60~90초)
   thumbnail_01.jpg     # 썸네일 1
   thumbnail_02.jpg     # 썸네일 2
   thumbnail_03.jpg     # 썸네일 3
@@ -98,7 +98,7 @@ output/
 
 ## 제약사항
 
-- 최대 길이: **60초**
+- 목표 길이: **60~90초**
 - 비율: **9:16** (1080x1920)
 - 음악: input/ 내 파일 중 **1개만** 사용
 - 자막/텍스트: **사용 금지**

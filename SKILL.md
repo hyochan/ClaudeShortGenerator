@@ -1,6 +1,6 @@
 # /short Skill
 
-input/ 폴더의 미디어 파일들을 분석하여 YouTube Shorts (9:16, ≤60s)를 자동 생성한다.
+input/ 폴더의 미디어 파일들을 분석하여 YouTube Shorts (9:16, 60~90s)를 자동 생성한다.
 
 ## Core Function
 
@@ -143,7 +143,7 @@ ffmpeg -i "output/final_short.mp4" -ss 4.2 -frames:v 1 \
 ## Technical Specifications
 
 - **해상도**: 1080x1920 (9:16)
-- **최대 길이**: 60초
+- **목표 길이**: 60~90초
 - **비디오 코덱**: H.264 (libx264)
 - **오디오 코덱**: AAC
 - **도구**: ffmpeg, ffprobe
